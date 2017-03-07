@@ -2,9 +2,9 @@ Transcript clear.
 
 Transcript show: '------------- TREE --------------'; cr.
 
-node1 _ BinTree newRoot: 'A'.
-node2 _ BinTree newRoot: 'C'.
-node3 _ BinTree newRoot: 'B'.
+node1 _ BinTree new: 'A'.
+node2 _ BinTree new: 'C'.
+node3 _ BinTree new: 'B'.
 
 node1 addLeftKid: node2.
 node2 addRightKid: node3.
@@ -17,7 +17,7 @@ Transcript show: node1 leftKid rightKid rootLabel; cr.
 
 Transcript show: '--------------- TRAVERSAL -----------------------------'; cr.
 
-traverse _ InorderTraversal newTraversal: node1.
+traverse _ InorderTraversal new: node1.
 "Transcript show: traverse first rootLabel; cr."
 Transcript show: traverse next rootLabel; cr.
 Transcript show: traverse next rootLabel; cr.
